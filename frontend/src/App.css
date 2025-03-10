@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Styling for the markdown container */
+.markdown-container {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.75;
+  letter-spacing: 0.2px;
+}
+
+.markdown-container h1,
+.markdown-container h2,
+.markdown-container h3 {
+  font-family: 'Outfit', sans-serif;
+  margin-top: 1.2em;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: #111827;
+}
+
+.markdown-container ul,
+.markdown-container ol {
+  padding-left: 20px;
+}
+
+/* Keyframes for logo animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Background video styling */
+.app-container {
+  position: relative; 
+  height: 100vh; 
+  width: 100vw; 
+  overflow: hidden;
+  background: transparent; /* Added */
+}
+
+.background-video {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%; 
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 1; /* Added */
+}
+
+
+.feature-container {
+  background-color: #f9f9f9; 
+  padding: 1.5rem;
+  border-radius: 0.5rem; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px; 
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.feature-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: #e3f2fd; 
+}
+
+.feature-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #111827;
+  text-transform: capitalize;
+}
+
+.feature-description {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #374151;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+}
